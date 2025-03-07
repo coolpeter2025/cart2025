@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Bean Coffee Cart - Tampa Bay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo-text {
+            color: #a38a72;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #a38a72;
+        }
+        .hero {
+            position: relative;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            padding: 2rem;
+            background-color: rgba(0,0,0,0.4);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 0.5rem;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background-color: #a38a72;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #8a7460;
+        }
+        .btn-secondary {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.2);
+        }
+        .section {
+            padding: 5rem 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo-text">Delightful Bean</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Coffee Cart in Tampa Bay</h1>
+            <p>Elevate your event with a professional barista service. Perfect for birthdays, weddings, and private parties.</p>
+            <div>
+                <a href="#" class="btn btn-primary">Book Your Coffee Cart</a>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Coffee Cart Services</h2>
+                <p>Delightful Bean offers premium coffee cart services for all types of events in Tampa Bay, Florida.</p>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px; margin: 1rem; padding: 2rem; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Birthdays</h3>
+                    <p>Make your birthday celebration special with our custom coffee service. Perfect for all ages!</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px; margin: 1rem; padding: 2rem; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Weddings</h3>
+                    <p>Add a touch of elegance to your wedding with our professional barista service.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px; margin: 1rem; padding: 2rem; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px;">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Private Parties</h3>
+                    <p>Impress your guests with specialty coffee drinks at your next private event.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Delightful Bean Coffee Cart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
