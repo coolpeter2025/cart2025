@@ -1,36 +1,36 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "next.config.js",
-      "use": "@vercel/next"
-    },
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/simplified",
-      "dest": "/public/simplified.html"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/public/images/",
-      "headers": {
-        "cache-control": "public, max-age=86400"
-      }
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
-  "github": {
-    "silent": true
-  }
+    "version":  2,
+    "builds":  [
+                   {
+                       "src":  "next.config.js",
+                       "use":  "@vercel/next"
+                   },
+                   {
+                       "src":  "public/**/*",
+                       "use":  "@vercel/static"
+                   }
+               ],
+    "routes":  [
+                   {
+                       "src":  "/simplified",
+                       "dest":  "/public/simplified.html"
+                   },
+                   {
+                       "src":  "/images/(.*)",
+                       "dest":  "/public/images/$1",
+                       "headers":  {
+                                       "cache-control":  "public, max-age=86400"
+                                   }
+                   },
+                   {
+                       "handle":  "filesystem"
+                   },
+                   {
+                       "src":  "/(.*)",
+                       "dest":  "/"
+                   }
+               ],
+    "github":  {
+                   "silent":  true
+               }
 }
