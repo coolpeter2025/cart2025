@@ -4,12 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // SVG Components
-const CoffeeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 text-primary">
-    <path d="M2 21.5C2 21.7761 2.22386 22 2.5 22H17.5C17.7761 22 18 21.7761 18 21.5C18 21.2239 17.7761 21 17.5 21H2.5C2.22386 21 2 21.2239 2 21.5Z" />
-    <path d="M19.5 5H18V3.5C18 3.22386 17.7761 3 17.5 3H2.5C2.22386 3 2 3.22386 2 3.5V15.5C2 18.5376 4.46243 21 7.5 21H12.5C15.5376 21 18 18.5376 18 15.5V15H19.5C21.9853 15 24 12.9853 24 10.5V9.5C24 7.01472 21.9853 5 19.5 5ZM17 15.5C17 17.9853 14.9853 20 12.5 20H7.5C5.01472 20 3 17.9853 3 15.5V4H17V15.5ZM23 10.5C23 12.433 21.4333 14 19.5 14H18V6H19.5C21.4333 6 23 7.56702 23 9.5V10.5Z" />
-  </svg>
-);
+// CoffeeIcon removed - was unused
 
 const CakeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 text-primary">
@@ -184,7 +179,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white">What Our Clients Say</h2>
             <p className="text-lg mt-4 text-secondary-light max-w-3xl mx-auto">
-              Don't just take our word for it. Here's what our clients have to say about our coffee cart service.
+              Don&apos;t just take our word for it. Here&apos;s what our clients have to say about our coffee cart service.
             </p>
           </div>
 
@@ -198,9 +193,9 @@ export default function Home() {
                 ))}
               </div>
               <p className="italic mb-4 text-secondary-light">
-                "Delightful Bean made our wedding day even more special. The coffee cart was a huge hit with our guests, and the barista was professional and friendly."
+                &quot;Delightful Bean made our wedding day even more special. The coffee cart was a huge hit with our guests, and the barista was professional and friendly.&quot;
               </p>
-              <p className="font-semibold">- Sarah & Michael, Wedding</p>
+              <p className="font-semibold">- Sarah &amp; Michael, Wedding</p>
             </div>
 
             <div className="bg-primary-dark p-8 rounded-xl">
@@ -212,7 +207,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="italic mb-4 text-secondary-light">
-                "I hired Delightful Bean for my 40th birthday party, and it was the perfect addition. Everyone loved the specialty drinks and the presentation was beautiful."
+                &quot;I hired Delightful Bean for my 40th birthday party, and it was the perfect addition. Everyone loved the specialty drinks and the presentation was beautiful.&quot;
               </p>
               <p className="font-semibold">- Jennifer, Birthday Party</p>
             </div>
@@ -226,7 +221,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="italic mb-4 text-secondary-light">
-                "Our corporate event was elevated by Delightful Bean's coffee cart service. The team was punctual, professional, and the coffee was excellent."
+                &quot;Our corporate event was elevated by Delightful Bean&apos;s coffee cart service. The team was punctual, professional, and the coffee was excellent.&quot;
               </p>
               <p className="font-semibold">- Robert, Corporate Event</p>
             </div>
